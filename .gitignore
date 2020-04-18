@@ -30,3 +30,13 @@
 *.exe
 *.out
 *.app
+
+# VS
+*.user
+*.db
+*.opendb
+
+# Dir
+Bin
+Build
+.vs
