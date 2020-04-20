@@ -129,18 +129,21 @@
   <ItemGroup>
     <ClCompile Include="glad.c" />
     <ClCompile Include="HelloTriangle.cpp" />
+    <ClCompile Include="HelloTriangleIndexed.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Utils\ReadShaderFile.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\README.md" />
     <None Include="..\RELEASE.md" />
+    <None Include="Note.md" />
     <None Include="Shader\HelloTriangle.fs" />
     <None Include="Shader\HelloTriangle.vs" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CommonDefine.h" />
     <ClInclude Include="HelloTriangle.h" />
+    <ClInclude Include="HelloTriangleIndexed.h" />
     <ClInclude Include="Utils\ReadShaderFile.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
