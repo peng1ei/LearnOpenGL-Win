@@ -1,3 +1,8 @@
+# version 0.3
+
+* 使用 VBO/EBO/VAO 绘制三角形
+* [你好，三角形](https://learnopengl-cn.github.io/01%20Getting%20started/04%20Hello%20Triangle/) 
+
 # version 0.2
 
 * 绘制指定颜色背景窗口
