@@ -82,6 +82,7 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <AdditionalIncludeDirectories>../3rdparty/glfw-3.3.2/x86/include;../3rdparty/glad/include</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
     </ClCompile>
     <Link>
       <AdditionalLibraryDirectories>../3rdparty/glfw-3.3.2/x86/lib-vc2015</AdditionalLibraryDirectories>
@@ -103,6 +104,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
       <AdditionalIncludeDirectories>../3rdparty/glfw-3.3.2/x86/include;../3rdparty/glad/include</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
@@ -126,7 +128,20 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="glad.c" />
+    <ClCompile Include="HelloTriangle.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Utils\ReadShaderFile.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\README.md" />
+    <None Include="..\RELEASE.md" />
+    <None Include="Shader\HelloTriangle.fs" />
+    <None Include="Shader\HelloTriangle.vs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CommonDefine.h" />
+    <ClInclude Include="HelloTriangle.h" />
+    <ClInclude Include="Utils\ReadShaderFile.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

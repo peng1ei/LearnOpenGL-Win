@@ -1,10 +1,10 @@
 # version 0.2
 
-* »æÖÆÖ¸¶¨ÑÕÉ«±³¾°´°¿Ú
-* [ÄãºÃ£¬´°¿Ú](https://learnopengl-cn.github.io/01%20Getting%20started/03%20Hello%20Window/) 
+* ç»˜åˆ¶æŒ‡å®šé¢œè‰²èƒŒæ™¯çª—å£
+* [ä½ å¥½ï¼Œçª—å£](https://learnopengl-cn.github.io/01%20Getting%20started/03%20Hello%20Window/) 
 
 # version 0.1
 
-* ³õÊ¼»¯ÏîÄ¿£¬ÅäÖÃ GLFW ºÍ GLAD
-* [´´½¨´°¿Ú](https://learnopengl-cn.github.io/01%20Getting%20started/02%20Creating%20a%20window/) 
+* åˆå§‹åŒ–é¡¹ç›®ï¼Œé…ç½® GLFW å’Œ GLAD
+* [åˆ›å»ºçª—å£](https://learnopengl-cn.github.io/01%20Getting%20started/02%20Creating%20a%20window/) 
 
