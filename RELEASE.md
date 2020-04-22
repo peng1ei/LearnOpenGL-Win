@@ -1,3 +1,7 @@
+# version 0.4
+
+* [你好，三角形]的练习题1，2，3
+
 # version 0.3
 
 * 使用 VBO/EBO/VAO 绘制三角形

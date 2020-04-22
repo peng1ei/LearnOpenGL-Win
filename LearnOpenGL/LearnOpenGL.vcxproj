@@ -127,10 +127,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Exercise\ExTwoTriangles.cpp" />
+    <ClCompile Include="Exercise\ExTwoTriangles2.cpp" />
+    <ClCompile Include="Exercise\ExTwoTriangles3.cpp" />
     <ClCompile Include="glad.c" />
     <ClCompile Include="HelloTriangle.cpp" />
     <ClCompile Include="HelloTriangleIndexed.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="ShaderProgram.cpp" />
     <ClCompile Include="Utils\ReadShaderFile.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -139,11 +143,16 @@
     <None Include="Note.md" />
     <None Include="Shader\HelloTriangle.fs" />
     <None Include="Shader\HelloTriangle.vs" />
+    <None Include="Shader\HelloTriangleYellow.fs" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CommonDefine.h" />
+    <ClInclude Include="Exercise\ExTwoTriangles.h" />
+    <ClInclude Include="Exercise\ExTwoTriangles2.h" />
+    <ClInclude Include="Exercise\ExTwoTriangles3.h" />
     <ClInclude Include="HelloTriangle.h" />
     <ClInclude Include="HelloTriangleIndexed.h" />
+    <ClInclude Include="ShaderProgram.h" />
     <ClInclude Include="Utils\ReadShaderFile.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
