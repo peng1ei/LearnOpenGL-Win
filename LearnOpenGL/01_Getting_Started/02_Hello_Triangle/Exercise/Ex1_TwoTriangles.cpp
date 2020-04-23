@@ -1,6 +1,6 @@
-#include "ExTwoTriangles.h"
-#include "../CommonDefine.h"
-#include "../ShaderProgram.h"
+#include "Ex1_TwoTriangles.h"
+#include "CommonDefine.h"
+#include "Utils/ShaderProgram.h"
 
 namespace mogl {
 

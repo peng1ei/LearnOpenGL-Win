@@ -1,9 +1,11 @@
 // mogl -- My OpenGL
-#include "HelloTriangle.h"
-#include "HelloTriangleIndexed.h"
-#include "Exercise/ExTwoTriangles.h"
-#include "Exercise/ExTwoTriangles2.h"
-#include "Exercise/ExTwoTriangles3.h"
+#include "01_Getting_Started/02_Hello_Triangle/HelloTriangle.h"
+#include "01_Getting_Started/02_Hello_Triangle/HelloTriangleIndexed.h"
+#include "01_Getting_Started/02_Hello_Triangle/Exercise/Ex1_TwoTriangles.h"
+#include "01_Getting_Started/02_Hello_Triangle/Exercise/Ex2_TwoTriangles2.h"
+#include "01_Getting_Started/02_Hello_Triangle/Exercise/Ex3_TwoTriangles3.h"
+
+
 
 int main(int argc, char **argv) {
 	int ret = 0;

@@ -1,21 +1,21 @@
-#include "ExTwoTriangles2.h"
-#include "../CommonDefine.h"
-#include "../ShaderProgram.h"
+#include "Ex3_TwoTriangles3.h"
+#include "CommonDefine.h"
+#include "Utils/ShaderProgram.h"
 
 namespace mogl {
 
-	namespace ch12ex2 {
-		void TwoTriangles2::FramebufferSizeCallback(GLFWwindow* window, int width, int height) {
+	namespace ch12ex3 {
+		void TwoTriangles3::FramebufferSizeCallback(GLFWwindow* window, int width, int height) {
 			glViewport(0, 0, width, height);
 		}
 
-		void TwoTriangles2::ProcessInput(GLFWwindow *window) {
+		void TwoTriangles3::ProcessInput(GLFWwindow *window) {
 			if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS) {
 				glfwSetWindowShouldClose(window, true);
 			}
 		}
 
-		int TwoTriangles2::Run(int argc, char *argv[]) {
+		int TwoTriangles3::Run(int argc, char *argv[]) {
 			glfwInit();
 			glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
 			glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
@@ -38,8 +38,15 @@ namespace mogl {
 			}
 
 			///![1] 构建GPU程序
+			// 绿色三角形
 			ShaderProgram shader_program("./Shader/HelloTriangle.vs","./Shader/HelloTriangle.fs");
 			if (!shader_program.CompileAndLink()) {
+				return -1;
+			}
+
+			// 黄色三角形
+			ShaderProgram shader_program_yellow("./Shader/HelloTriangle.vs", "./Shader/HelloTriangleYellow.fs");
+			if (!shader_program_yellow.CompileAndLink()) {
 				return -1;
 			}
 
@@ -104,6 +111,7 @@ namespace mogl {
 				glBindVertexArray(VAO[0]);
 				glDrawArrays(GL_TRIANGLES, 0, 3);
 
+				glUseProgram(shader_program_yellow.GetProgram());
 				glBindVertexArray(VAO[1]);
 				glDrawArrays(GL_TRIANGLES, 0, 3);
 

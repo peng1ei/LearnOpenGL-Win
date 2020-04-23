@@ -22,8 +22,17 @@
     <Filter Include="Playground">
       <UniqueIdentifier>{f929cfdc-9655-469c-81e2-099ac7dbd2fd}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Exercise">
-      <UniqueIdentifier>{e66a1ffe-a59d-4a65-ae41-fecc0f4c01b0}</UniqueIdentifier>
+    <Filter Include="01_Getting_Started">
+      <UniqueIdentifier>{c0a4c375-dd0d-4fe8-8806-d996473eab78}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils">
+      <UniqueIdentifier>{c301a8ee-51a6-458e-b135-cff190c54126}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01_Getting_Started\02_Hello_Triangle">
+      <UniqueIdentifier>{6f4ebd01-8640-436e-80ff-b65545ce34f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01_Getting_Started\02_Hello_Triangle\Exercise">
+      <UniqueIdentifier>{f6b65b2a-38fc-4ce3-ae2e-b0c22228ec26}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -33,26 +42,26 @@
     <ClCompile Include="glad.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="Utils\ShaderProgram.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
     <ClCompile Include="Utils\ReadShaderFile.cpp">
-      <Filter>源文件</Filter>
+      <Filter>Utils</Filter>
     </ClCompile>
-    <ClCompile Include="HelloTriangle.cpp">
-      <Filter>源文件</Filter>
+    <ClCompile Include="01_Getting_Started\02_Hello_Triangle\HelloTriangleIndexed.cpp">
+      <Filter>01_Getting_Started\02_Hello_Triangle</Filter>
     </ClCompile>
-    <ClCompile Include="HelloTriangleIndexed.cpp">
-      <Filter>源文件</Filter>
+    <ClCompile Include="01_Getting_Started\02_Hello_Triangle\HelloTriangle.cpp">
+      <Filter>01_Getting_Started\02_Hello_Triangle</Filter>
     </ClCompile>
-    <ClCompile Include="ShaderProgram.cpp">
-      <Filter>源文件</Filter>
+    <ClCompile Include="01_Getting_Started\02_Hello_Triangle\Exercise\Ex2_TwoTriangles2.cpp">
+      <Filter>01_Getting_Started\02_Hello_Triangle\Exercise</Filter>
     </ClCompile>
-    <ClCompile Include="Exercise\ExTwoTriangles.cpp">
-      <Filter>Exercise</Filter>
+    <ClCompile Include="01_Getting_Started\02_Hello_Triangle\Exercise\Ex3_TwoTriangles3.cpp">
+      <Filter>01_Getting_Started\02_Hello_Triangle\Exercise</Filter>
     </ClCompile>
-    <ClCompile Include="Exercise\ExTwoTriangles2.cpp">
-      <Filter>Exercise</Filter>
-    </ClCompile>
-    <ClCompile Include="Exercise\ExTwoTriangles3.cpp">
-      <Filter>Exercise</Filter>
+    <ClCompile Include="01_Getting_Started\02_Hello_Triangle\Exercise\Ex1_TwoTriangles.cpp">
+      <Filter>01_Getting_Started\02_Hello_Triangle\Exercise</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -73,28 +82,28 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Utils\ReadShaderFile.h">
-      <Filter>头文件</Filter>
+      <Filter>Utils</Filter>
     </ClInclude>
-    <ClInclude Include="HelloTriangle.h">
-      <Filter>头文件</Filter>
+    <ClInclude Include="Utils\ShaderProgram.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="01_Getting_Started\02_Hello_Triangle\HelloTriangle.h">
+      <Filter>01_Getting_Started\02_Hello_Triangle</Filter>
+    </ClInclude>
+    <ClInclude Include="01_Getting_Started\02_Hello_Triangle\HelloTriangleIndexed.h">
+      <Filter>01_Getting_Started\02_Hello_Triangle</Filter>
+    </ClInclude>
+    <ClInclude Include="01_Getting_Started\02_Hello_Triangle\Exercise\Ex2_TwoTriangles2.h">
+      <Filter>01_Getting_Started\02_Hello_Triangle\Exercise</Filter>
+    </ClInclude>
+    <ClInclude Include="01_Getting_Started\02_Hello_Triangle\Exercise\Ex3_TwoTriangles3.h">
+      <Filter>01_Getting_Started\02_Hello_Triangle\Exercise</Filter>
+    </ClInclude>
+    <ClInclude Include="01_Getting_Started\02_Hello_Triangle\Exercise\Ex1_TwoTriangles.h">
+      <Filter>01_Getting_Started\02_Hello_Triangle\Exercise</Filter>
     </ClInclude>
     <ClInclude Include="CommonDefine.h">
       <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="HelloTriangleIndexed.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="ShaderProgram.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="Exercise\ExTwoTriangles.h">
-      <Filter>Exercise</Filter>
-    </ClInclude>
-    <ClInclude Include="Exercise\ExTwoTriangles2.h">
-      <Filter>Exercise</Filter>
-    </ClInclude>
-    <ClInclude Include="Exercise\ExTwoTriangles3.h">
-      <Filter>Exercise</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

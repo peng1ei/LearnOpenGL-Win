@@ -81,7 +81,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>../3rdparty/glfw-3.3.2/x86/include;../3rdparty/glad/include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../3rdparty/glfw-3.3.2/x86/include;../3rdparty/glad/include;./</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
     </ClCompile>
     <Link>
@@ -103,7 +103,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>../3rdparty/glfw-3.3.2/x86/include;../3rdparty/glad/include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../3rdparty/glfw-3.3.2/x86/include;../3rdparty/glad/include;./</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
     </ClCompile>
     <Link>
@@ -127,15 +127,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Exercise\ExTwoTriangles.cpp" />
-    <ClCompile Include="Exercise\ExTwoTriangles2.cpp" />
-    <ClCompile Include="Exercise\ExTwoTriangles3.cpp" />
+    <ClCompile Include="01_Getting_Started\02_Hello_Triangle\Exercise\Ex1_TwoTriangles.cpp" />
+    <ClCompile Include="01_Getting_Started\02_Hello_Triangle\Exercise\Ex2_TwoTriangles2.cpp" />
+    <ClCompile Include="01_Getting_Started\02_Hello_Triangle\Exercise\Ex3_TwoTriangles3.cpp" />
+    <ClCompile Include="01_Getting_Started\02_Hello_Triangle\HelloTriangle.cpp" />
+    <ClCompile Include="01_Getting_Started\02_Hello_Triangle\HelloTriangleIndexed.cpp" />
     <ClCompile Include="glad.c" />
-    <ClCompile Include="HelloTriangle.cpp" />
-    <ClCompile Include="HelloTriangleIndexed.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="ShaderProgram.cpp" />
     <ClCompile Include="Utils\ReadShaderFile.cpp" />
+    <ClCompile Include="Utils\ShaderProgram.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\README.md" />
@@ -146,14 +146,14 @@
     <None Include="Shader\HelloTriangleYellow.fs" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="01_Getting_Started\02_Hello_Triangle\Exercise\Ex1_TwoTriangles.h" />
+    <ClInclude Include="01_Getting_Started\02_Hello_Triangle\Exercise\Ex2_TwoTriangles2.h" />
+    <ClInclude Include="01_Getting_Started\02_Hello_Triangle\Exercise\Ex3_TwoTriangles3.h" />
+    <ClInclude Include="01_Getting_Started\02_Hello_Triangle\HelloTriangle.h" />
+    <ClInclude Include="01_Getting_Started\02_Hello_Triangle\HelloTriangleIndexed.h" />
     <ClInclude Include="CommonDefine.h" />
-    <ClInclude Include="Exercise\ExTwoTriangles.h" />
-    <ClInclude Include="Exercise\ExTwoTriangles2.h" />
-    <ClInclude Include="Exercise\ExTwoTriangles3.h" />
-    <ClInclude Include="HelloTriangle.h" />
-    <ClInclude Include="HelloTriangleIndexed.h" />
-    <ClInclude Include="ShaderProgram.h" />
     <ClInclude Include="Utils\ReadShaderFile.h" />
+    <ClInclude Include="Utils\ShaderProgram.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

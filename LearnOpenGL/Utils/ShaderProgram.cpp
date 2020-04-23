@@ -1,5 +1,5 @@
 #include "ShaderProgram.h"
-#include "Utils/ReadShaderFile.h"
+#include "ReadShaderFile.h"
 
 namespace mogl {
 

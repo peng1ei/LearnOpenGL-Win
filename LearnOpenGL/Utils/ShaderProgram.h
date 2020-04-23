@@ -1,6 +1,6 @@
 #pragma once
 #include <string>
-#include "CommonDefine.h"
+#include "../CommonDefine.h"
 
 namespace mogl {
 	class ShaderProgram
