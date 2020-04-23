@@ -34,6 +34,9 @@
     <Filter Include="01_Getting_Started\02_Hello_Triangle\Exercise">
       <UniqueIdentifier>{f6b65b2a-38fc-4ce3-ae2e-b0c22228ec26}</UniqueIdentifier>
     </Filter>
+    <Filter Include="01_Getting_Started\03_Shader">
+      <UniqueIdentifier>{63aca29e-e024-4476-bca1-dcbd1168c6de}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -73,11 +76,11 @@
     <None Include="Shader\HelloTriangle.vs">
       <Filter>Shader</Filter>
     </None>
-    <None Include="Note.md">
-      <Filter>Doc</Filter>
-    </None>
     <None Include="Shader\HelloTriangleYellow.fs">
       <Filter>Shader</Filter>
+    </None>
+    <None Include="..\Doc\Note.md">
+      <Filter>Doc</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>

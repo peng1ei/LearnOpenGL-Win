@@ -138,9 +138,9 @@
     <ClCompile Include="Utils\ShaderProgram.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\Doc\Note.md" />
     <None Include="..\README.md" />
     <None Include="..\RELEASE.md" />
-    <None Include="Note.md" />
     <None Include="Shader\HelloTriangle.fs" />
     <None Include="Shader\HelloTriangle.vs" />
     <None Include="Shader\HelloTriangleYellow.fs" />
