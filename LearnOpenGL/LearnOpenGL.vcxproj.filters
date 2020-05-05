@@ -37,6 +37,15 @@
     <Filter Include="01_Getting_Started\03_Shader">
       <UniqueIdentifier>{63aca29e-e024-4476-bca1-dcbd1168c6de}</UniqueIdentifier>
     </Filter>
+    <Filter Include="01_Getting_Started\03_Shader\Exercise">
+      <UniqueIdentifier>{35ddc3a7-2f60-4da3-8db8-e5b893126e16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01_Getting_Started\04_Textures">
+      <UniqueIdentifier>{cf25a806-b8a9-4697-8b01-239c71cf9055}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01_Getting_Started\04_Textures\Exercise">
+      <UniqueIdentifier>{0160d821-f602-4d3f-9a0f-7875c61c85f6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -66,6 +75,27 @@
     <ClCompile Include="01_Getting_Started\02_Hello_Triangle\Exercise\Ex1_TwoTriangles.cpp">
       <Filter>01_Getting_Started\02_Hello_Triangle\Exercise</Filter>
     </ClCompile>
+    <ClCompile Include="01_Getting_Started\03_Shader\ShaderUniform.cpp">
+      <Filter>01_Getting_Started\03_Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="01_Getting_Started\03_Shader\ShaderInterpolation.cpp">
+      <Filter>01_Getting_Started\03_Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="01_Getting_Started\03_Shader\Exercise\Ex1_Triangle.cpp">
+      <Filter>01_Getting_Started\03_Shader\Exercise</Filter>
+    </ClCompile>
+    <ClCompile Include="01_Getting_Started\03_Shader\Exercise\Ex2_TriangleMove.cpp">
+      <Filter>01_Getting_Started\03_Shader\Exercise</Filter>
+    </ClCompile>
+    <ClCompile Include="01_Getting_Started\03_Shader\Exercise\Ex3_Triangle.cpp">
+      <Filter>01_Getting_Started\03_Shader\Exercise</Filter>
+    </ClCompile>
+    <ClCompile Include="01_Getting_Started\04_Textures\Texture.cpp">
+      <Filter>01_Getting_Started\04_Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="stb_image.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\RELEASE.md" />
@@ -81,6 +111,42 @@
     </None>
     <None Include="..\Doc\Note.md">
       <Filter>Doc</Filter>
+    </None>
+    <None Include="Shader\010301_ShaderUniform.vs">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="Shader\010301_ShaderUniform.fs">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="Shader\010302_ShaderInterpolation.fs">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="Shader\010302_ShaderInterpolation.vs">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="Shader\0103Ex01_Triangle.fs">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="Shader\0103Ex01_Triangle.vs">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="Shader\0103Ex02_TriangleMove.fs">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="Shader\0103Ex02_TriangleMove.vs">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="Shader\0103Ex03_Triangle.fs">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="Shader\0103Ex03_Triangle.vs">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="Shader\0104_Texture.fs">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="Shader\0104_Texture.vs">
+      <Filter>Shader</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
@@ -107,6 +173,24 @@
     </ClInclude>
     <ClInclude Include="CommonDefine.h">
       <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="01_Getting_Started\03_Shader\ShaderUniform.h">
+      <Filter>01_Getting_Started\03_Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="01_Getting_Started\03_Shader\ShaderInterpolation.h">
+      <Filter>01_Getting_Started\03_Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="01_Getting_Started\03_Shader\Exercise\Ex1_Triangle.h">
+      <Filter>01_Getting_Started\03_Shader\Exercise</Filter>
+    </ClInclude>
+    <ClInclude Include="01_Getting_Started\03_Shader\Exercise\Ex2_TriangleMove.h">
+      <Filter>01_Getting_Started\03_Shader\Exercise</Filter>
+    </ClInclude>
+    <ClInclude Include="01_Getting_Started\03_Shader\Exercise\Ex3_Triangle.h">
+      <Filter>01_Getting_Started\03_Shader\Exercise</Filter>
+    </ClInclude>
+    <ClInclude Include="01_Getting_Started\04_Textures\Texture.h">
+      <Filter>01_Getting_Started\04_Textures</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

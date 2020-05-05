@@ -3,6 +3,10 @@
 
 namespace mogl {
 
+	void ShaderProgram::UnUse() {
+		glUseProgram(0);
+	}
+
 	ShaderProgram::ShaderProgram(const std::string &vs_file, const std::string &fs_file)
 		: vs_file_(vs_file),
 		fs_file_(fs_file),
@@ -85,5 +89,28 @@ namespace mogl {
 
 		std::cout << "INFO::SHADER::PROGRAM::LINKING_SUCCEED\n" << std::endl;
 		return ret;
+	}
+
+	void ShaderProgram::Use() {
+		glUseProgram(program_);
+	}
+
+	void ShaderProgram::SetBool(const std::string &name, bool value) {
+		glUniform1i(glGetUniformLocation(program_, name.c_str()), value);
+	}
+	void ShaderProgram::SetInt(const std::string &name, int value) {
+		glUniform1i(glGetUniformLocation(program_, name.c_str()), value);
+	}
+	void ShaderProgram::SetFloat(const std::string &name, float value) {
+		glUniform1f(glGetUniformLocation(program_, name.c_str()), value);
+	}
+	void ShaderProgram::SetVec2(const std::string &name, float v1, float v2) {
+		glUniform2f(glGetUniformLocation(program_, name.c_str()), v1, v2);
+	}
+	void ShaderProgram::SetVec3(const std::string &name, float v1, float v2, float v3) {
+		glUniform3f(glGetUniformLocation(program_, name.c_str()), v1, v2, v3);
+	}
+	void ShaderProgram::SetVec4(const std::string &name, float v1, float v2, float v3, float v4) {
+		glUniform4f(glGetUniformLocation(program_, name.c_str()), v1, v2, v3, v4);
 	}
 }

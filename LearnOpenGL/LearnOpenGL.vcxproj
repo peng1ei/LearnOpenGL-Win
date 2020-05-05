@@ -81,7 +81,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>../3rdparty/glfw-3.3.2/x86/include;../3rdparty/glad/include;./</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../3rdparty/glfw-3.3.2/x86/include;../3rdparty/glad/include;./;../3rdparty/stb</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
     </ClCompile>
     <Link>
@@ -103,7 +103,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>../3rdparty/glfw-3.3.2/x86/include;../3rdparty/glad/include;./</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../3rdparty/glfw-3.3.2/x86/include;../3rdparty/glad/include;./;../3rdparty/stb</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
     </ClCompile>
     <Link>
@@ -132,8 +132,15 @@
     <ClCompile Include="01_Getting_Started\02_Hello_Triangle\Exercise\Ex3_TwoTriangles3.cpp" />
     <ClCompile Include="01_Getting_Started\02_Hello_Triangle\HelloTriangle.cpp" />
     <ClCompile Include="01_Getting_Started\02_Hello_Triangle\HelloTriangleIndexed.cpp" />
+    <ClCompile Include="01_Getting_Started\03_Shader\Exercise\Ex1_Triangle.cpp" />
+    <ClCompile Include="01_Getting_Started\03_Shader\Exercise\Ex2_TriangleMove.cpp" />
+    <ClCompile Include="01_Getting_Started\03_Shader\Exercise\Ex3_Triangle.cpp" />
+    <ClCompile Include="01_Getting_Started\03_Shader\ShaderInterpolation.cpp" />
+    <ClCompile Include="01_Getting_Started\03_Shader\ShaderUniform.cpp" />
+    <ClCompile Include="01_Getting_Started\04_Textures\Texture.cpp" />
     <ClCompile Include="glad.c" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="stb_image.cpp" />
     <ClCompile Include="Utils\ReadShaderFile.cpp" />
     <ClCompile Include="Utils\ShaderProgram.cpp" />
   </ItemGroup>
@@ -141,6 +148,18 @@
     <None Include="..\Doc\Note.md" />
     <None Include="..\README.md" />
     <None Include="..\RELEASE.md" />
+    <None Include="Shader\010301_ShaderUniform.fs" />
+    <None Include="Shader\010301_ShaderUniform.vs" />
+    <None Include="Shader\010302_ShaderInterpolation.fs" />
+    <None Include="Shader\010302_ShaderInterpolation.vs" />
+    <None Include="Shader\0103Ex01_Triangle.fs" />
+    <None Include="Shader\0103Ex01_Triangle.vs" />
+    <None Include="Shader\0103Ex02_TriangleMove.fs" />
+    <None Include="Shader\0103Ex02_TriangleMove.vs" />
+    <None Include="Shader\0103Ex03_Triangle.fs" />
+    <None Include="Shader\0103Ex03_Triangle.vs" />
+    <None Include="Shader\0104_Texture.fs" />
+    <None Include="Shader\0104_Texture.vs" />
     <None Include="Shader\HelloTriangle.fs" />
     <None Include="Shader\HelloTriangle.vs" />
     <None Include="Shader\HelloTriangleYellow.fs" />
@@ -151,6 +170,12 @@
     <ClInclude Include="01_Getting_Started\02_Hello_Triangle\Exercise\Ex3_TwoTriangles3.h" />
     <ClInclude Include="01_Getting_Started\02_Hello_Triangle\HelloTriangle.h" />
     <ClInclude Include="01_Getting_Started\02_Hello_Triangle\HelloTriangleIndexed.h" />
+    <ClInclude Include="01_Getting_Started\03_Shader\Exercise\Ex1_Triangle.h" />
+    <ClInclude Include="01_Getting_Started\03_Shader\Exercise\Ex2_TriangleMove.h" />
+    <ClInclude Include="01_Getting_Started\03_Shader\Exercise\Ex3_Triangle.h" />
+    <ClInclude Include="01_Getting_Started\03_Shader\ShaderInterpolation.h" />
+    <ClInclude Include="01_Getting_Started\03_Shader\ShaderUniform.h" />
+    <ClInclude Include="01_Getting_Started\04_Textures\Texture.h" />
     <ClInclude Include="CommonDefine.h" />
     <ClInclude Include="Utils\ReadShaderFile.h" />
     <ClInclude Include="Utils\ShaderProgram.h" />
