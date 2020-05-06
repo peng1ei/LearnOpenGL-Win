@@ -138,6 +138,7 @@
     <ClCompile Include="01_Getting_Started\03_Shader\ShaderInterpolation.cpp" />
     <ClCompile Include="01_Getting_Started\03_Shader\ShaderUniform.cpp" />
     <ClCompile Include="01_Getting_Started\04_Textures\Texture.cpp" />
+    <ClCompile Include="01_Getting_Started\04_Textures\TextureCombined.cpp" />
     <ClCompile Include="glad.c" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="stb_image.cpp" />
@@ -160,6 +161,8 @@
     <None Include="Shader\0103Ex03_Triangle.vs" />
     <None Include="Shader\0104_Texture.fs" />
     <None Include="Shader\0104_Texture.vs" />
+    <None Include="Shader\0104_TextureCombined.fs" />
+    <None Include="Shader\0104_TextureCombined.vs" />
     <None Include="Shader\HelloTriangle.fs" />
     <None Include="Shader\HelloTriangle.vs" />
     <None Include="Shader\HelloTriangleYellow.fs" />
@@ -176,6 +179,7 @@
     <ClInclude Include="01_Getting_Started\03_Shader\ShaderInterpolation.h" />
     <ClInclude Include="01_Getting_Started\03_Shader\ShaderUniform.h" />
     <ClInclude Include="01_Getting_Started\04_Textures\Texture.h" />
+    <ClInclude Include="01_Getting_Started\04_Textures\TextureCombined.h" />
     <ClInclude Include="CommonDefine.h" />
     <ClInclude Include="Utils\ReadShaderFile.h" />
     <ClInclude Include="Utils\ShaderProgram.h" />
