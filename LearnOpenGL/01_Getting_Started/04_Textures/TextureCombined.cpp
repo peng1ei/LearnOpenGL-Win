@@ -6,6 +6,9 @@
 namespace mogl {
 
 	namespace ch0104 {
+
+		float TexturesCombined::mix_value_ = 0.2;
+
 		void TexturesCombined::FramebufferSizeCallback(GLFWwindow* window, int width, int height) {
 			glViewport(0, 0, width, height);
 		}
@@ -13,6 +16,20 @@ namespace mogl {
 		void TexturesCombined::ProcessInput(GLFWwindow *window) {
 			if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS) {
 				glfwSetWindowShouldClose(window, true);
+			}
+
+			if (glfwGetKey(window, GLFW_KEY_UP) == GLFW_PRESS) {
+				mix_value_ += 0.05f;
+				if (mix_value_ >= 1.0f) {
+					mix_value_ = 1.0f;
+				}
+			}
+
+			if (glfwGetKey(window, GLFW_KEY_DOWN) == GLFW_PRESS) {
+				mix_value_ -= 0.05f;
+				if (mix_value_ <= 0.0f) {
+					mix_value_ = 0.0f;
+				}
 			}
 		}
 
@@ -138,6 +155,7 @@ namespace mogl {
 			shader.Use();
 			glUniform1i(glGetUniformLocation(shader.GetProgram(), "texture1"), 0);
 			shader.SetInt("texture2", 1);
+			shader.SetFloat("u_mixValue", mix_value_);
 
 			// 不停的渲染
 			while (!glfwWindowShouldClose(window)) {
@@ -156,6 +174,9 @@ namespace mogl {
 
 				// render container
 				shader.Use();
+
+				shader.SetFloat("u_mixValue", mix_value_);
+
 				glBindVertexArray(VAO);
 				glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
 

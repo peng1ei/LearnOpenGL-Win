@@ -1,3 +1,7 @@
+# version 0.7
+
+* 纹理
+
 # version 0.6
 
 * 着色器
