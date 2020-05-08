@@ -46,6 +46,9 @@
     <Filter Include="01_Getting_Started\04_Textures\Exercise">
       <UniqueIdentifier>{0160d821-f602-4d3f-9a0f-7875c61c85f6}</UniqueIdentifier>
     </Filter>
+    <Filter Include="01_Getting_Started\05_Transformations">
+      <UniqueIdentifier>{879c3326-f9a0-4778-a069-f32a489de7a5}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -98,6 +101,9 @@
     </ClCompile>
     <ClCompile Include="01_Getting_Started\04_Textures\TextureCombined.cpp">
       <Filter>01_Getting_Started\04_Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="01_Getting_Started\05_Transformations\Transformations.cpp">
+      <Filter>01_Getting_Started\05_Transformations</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -157,6 +163,12 @@
     <None Include="Shader\0104_TextureCombined.vs">
       <Filter>Shader</Filter>
     </None>
+    <None Include="Shader\0105_Transformations.fs">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="Shader\0105_Transformations.vs">
+      <Filter>Shader</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Utils\ReadShaderFile.h">
@@ -203,6 +215,9 @@
     </ClInclude>
     <ClInclude Include="01_Getting_Started\04_Textures\TextureCombined.h">
       <Filter>01_Getting_Started\04_Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="01_Getting_Started\05_Transformations\Transformations.h">
+      <Filter>01_Getting_Started\05_Transformations</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

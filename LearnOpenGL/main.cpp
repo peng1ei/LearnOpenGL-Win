@@ -15,6 +15,8 @@
 #include "01_Getting_Started/04_Textures/Texture.h"
 #include "01_Getting_Started/04_Textures/TextureCombined.h"
 
+#include "01_Getting_Started/05_Transformations/Transformations.h"
+
 void GetOpenGLInformation() {
 	int nrAttributes;
 	glGetIntegerv(GL_MAX_VERTEX_ATTRIBS, &nrAttributes);
@@ -36,7 +38,8 @@ int main(int argc, char **argv) {
 	//ret = mogl::ch13ex3::Triangle::Run(argc, argv);
 
 	//ret = mogl::ch0104::Textures::Run(argc, argv);
-	ret = mogl::ch0104::TexturesCombined::Run(argc, argv);
+	//ret = mogl::ch0104::TexturesCombined::Run(argc, argv);
+	ret = mogl::ch0105::Transformations::Run(argc, argv);
 
 	return ret;
 }
